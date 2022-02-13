@@ -5,7 +5,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 
-contract DuckieToken is ERC20{
+contract DuckieToken is ERC20, Ownable, ERC20Burnable{
 
     constructor() ERC20("Duckie Multi Metaverse", "MMETA"){
         
